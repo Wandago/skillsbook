@@ -24,6 +24,16 @@ code — e.g. types, an API client, or design tokens.
   **business** (registered name plus a contact person). Both own listings; the
   difference is what we ask for at sign-up and what we can verify.
 
+## Brand
+
+The brand book (logo, colour, typography, illustration, UI, voice) lives on the
+design canvas, "Brand" page:
+https://claude.ai/code/artifact/b013b73f-d379-489b-8371-bcc5b2854590
+
+Its tokens are the source of truth for `apps/web/src/app/globals.css` — colour,
+type, radii and elevation are defined there once, so changing a brand value
+changes the app. Keep the two in step.
+
 ## Data model
 
 `supabase/migrations/0001_init.sql` defines it:

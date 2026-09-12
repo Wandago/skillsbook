@@ -1,26 +1,42 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* Brand tokens — see the brand book (sheets 02, 03, 05). Changing a value here
+   changes it everywhere, so keep it in step with the guidelines. */
+@theme {
+  --color-ink: #141414;
+  --color-body: #5c564c;
+  --color-sub: #9a948b;
+  --color-line: #f2f2ef;
+  --color-soft: #f4f4f1;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-pink: #ff7eae;
+  --color-pink-tint: #ffe7ef;
+  --color-pink-deep: #a83a5e;
+  --color-blue: #6fcbff;
+  --color-blue-tint: #e2f4ff;
+  --color-blue-deep: #2e5a78;
+  --color-yellow: #ffcf56;
+  --color-yellow-tint: #fff3d4;
+  --color-yellow-deep: #8a6b1e;
+  --color-green: #7ee8a8;
+  --color-green-tint: #e3f9ec;
+  --color-green-deep: #2f6b45;
+  --color-purple: #b79bff;
+  --color-purple-tint: #efe9ff;
+  --color-purple-deep: #5b43a8;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: "Manrope", system-ui, sans-serif;
+
+  --radius-field: 18px;
+  --radius-tile: 20px;
+  --radius-card: 26px;
+  --radius-sheet: 30px;
+
+  --shadow-raised: 0 10px 26px rgb(20 20 20 / 0.1);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
 }
